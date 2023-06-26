@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    font-family: Poppins;
+}
+
+.background-image{
+    background-image: url("images/bg-desktop-light.jpg");
+    background-color: #8a2be2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 1px;
+    padding-bottom: 15rem;
+}
+
+.background-image h1{
+    position: absolute;
+    top: 17%;
+    left: 16%;
+    font-size: 35px;
+    font-family: Lobster Two;
+    color: #fff;
+}
+
+.background-image h1 i{
+    margin-left: 43rem;
+    font-size: 30px;
+}
+
+.top-container{
+    position: absolute;
+    width: 30rem;
+    height: 3.5rem;
+    background-color: #fff;
+    border-radius: 30px;
+    top: 10em;
+    left: 27em;
+
+}
+
+input{
+    border-radius: 30px;
+    width: 22rem;
+    height: 3.1rem;
+    border: none;
+    outline: none;
+    text-align: justify;
+    padding-left: 40px;
+    font-size: 20px;
+    font-family: Roboto;
+    cursor: text;
+}
+
+button{
+    border-radius: 30px;
+    width: 8rem;
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    background-color: #8a2be2;
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+    font-family: Roboto;
+    transition: transform 0.4s, ease-out;
+}
+
+button:hover{
+    color: #fff;
+}
+
+button i{
+    margin-right: 5px;
+}
+
+.down-container{
+    position: absolute;
+    background-color: rgba(136, 136, 136, 10%);
+    width: 30rem;
+    height: 5em;
+    border-radius: 30px;
+    top: 0;
+    left: 27em;
+    padding-top: 20px;
+    cursor: pointer;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, center 0.4s;
+}
+.show-container{
+    visibility: visible;
+    top: 50%;
+    margin-left: 14.8em;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+ul li{
+    list-style:  none;
+    font-size: 20px;
+    text-align: justify;
+    position: relative;
+    margin-left: 1rem;
+}
+
+ul li::before{
+    content: '';
+    border-radius: 99px;
+    border: 2px solid #8a2be2;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    right: 27rem;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url("images/checked.png");
+    background-position: center;
+    background-size: cover;
+}
+
+fieldset{
+    position: absolute;
+    top: 38.3em;
+    left: 38%;
+    border: none;
+}
+
+fieldset a{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+fieldset a:hover{
+    color: #8a2be2;
+}
+
+ul li span{
+    position: absolute;
+    right: 1em;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 40px;
+    color: #888;
+    line-height: 40px;
+    text-align: justify;
+    border-radius: 90px;
+}
+
+ul li span:hover{
+    position: absolute;
+    color: #ff0000;
+}
