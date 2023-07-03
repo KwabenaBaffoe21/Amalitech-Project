@@ -1,163 +1,132 @@
 *{
     margin: 0;
+    height: 100%;
+    overflow: hidden;
     font-family: Poppins;
 }
 
-.background-image{
-    background-image: url("images/bg-desktop-light.jpg");
-    background-color: #8a2be2;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 1px;
-    padding-bottom: 15rem;
+header{
+background-image: url("images/bg-desktop-light.jpg");
+background-position: center;
+background-size: cover;
+height: 202px;
+
 }
 
-.background-image h1{
-    position: absolute;
-    top: 17%;
-    left: 16%;
-    font-size: 35px;
-    font-family: Lobster Two;
+h1{
     color: #fff;
-}
-
-.background-image h1 i{
-    margin-left: 43rem;
-    font-size: 30px;
-}
-
-.top-container{
+    font-size: 40px;
+    font-weight: 700px;
+    word-wrap: break-word;
     position: absolute;
-    width: 30rem;
-    height: 3.5rem;
+    top: 53px;
+    left: 152px;
+}
+
+header .fa-moon{
+    color: #fff;
+    position: absolute;
+    top: 66px;
+    left: 1059px;
+    width: 47rem;
+    height: 47rem;
+}
+
+header div{
+    position: absolute;
+    width: 537px;
+    height: 43px;
     background-color: #fff;
+    margin-top: 129px;
+    margin-left: 387px;
     border-radius: 30px;
-    top: 10em;
-    left: 27em;
-
 }
 
-input{
-    border-radius: 30px;
-    width: 22rem;
-    height: 3.1rem;
-    border: none;
-    outline: none;
-    text-align: justify;
-    padding-left: 40px;
-    font-size: 20px;
-    font-family: Roboto;
-    cursor: text;
-}
-
-button{
-    border-radius: 30px;
-    width: 8rem;
-    height: 3.5rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    user-select: none;
-    background-color: #8a2be2;
+header input{
     position: absolute;
-    right: 0;
+    width: calc(537px - 85px);
+    height: 43px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-family: Raleway;
     font-size: 16px;
-    font-family: Roboto;
-    transition: transform 0.4s, ease-out;
+    padding-left: 30px;
+    cursor: text;
+    word-wrap: break-word;
+    font-weight: 400px;
 }
 
-button:hover{
+header button{
+    position: absolute;
+    width: 85px;
+    height: 43px;
+    left: 452px;
+    border-radius: 30px;
+    font-family: Raleway;
+    font-size: 16px;
+    word-wrap: break-word;
+    font-weight: 400px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    background-color: #8a2be2;
+    padding: 12px 11px 12px 43px;
     color: #fff;
 }
 
-button i{
-    margin-right: 5px;
+header button .fa-plus{
+    position: absolute;
+    right: 48.13px;
+    left: 15px;
 }
 
-.down-container{
-    position: absolute;
-    background-color: rgba(136, 136, 136, 10%);
-    width: 30rem;
-    height: 5em;
-    border-radius: 30px;
-    top: 0;
-    left: 27em;
-    padding-top: 20px;
-    cursor: pointer;
-    user-select: none;
-    transform: translate(-50%, -50%) scale(0.1);
-    visibility: hidden;
-    transition: transform 0.4s, center 0.4s;
+header button:hover{
+    background-color: rgba(138, 43, 226,80%);
+    color: #000;
 }
-.show-container{
-    visibility: visible;
-    top: 50%;
-    margin-left: 14.8em;
-    transform: translate(-50%, -50%) scale(1);
+
+#container{
+    width: 663px;
+    height: fit-content;
+    flex-shrink: 0;
+    margin-top: 33px;
+    margin-left: 324px;
+    background-color: rgba(217, 217, 217, 50%);
+    border-radius: 30px;
+    padding: 12px 49px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 ul li{
-    list-style:  none;
-    font-size: 20px;
-    text-align: justify;
+    color: #000;
+    font-size: 16px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    cursor: pointer;
     position: relative;
-    margin-left: 1rem;
+}
+
+.divider{
+    width: 563px;
+    height: 1px;
+    background-color: #000;
 }
 
 ul li::before{
-    content: '';
-    border-radius: 99px;
+    content: "";
+    position: absolute;
+    border-radius: 28px;
     border: 2px solid #8a2be2;
-    cursor: pointer;
-    user-select: none;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 3px;
-    right: 27rem;
-}
-
-ul li.checked{
-    text-decoration: line-through;
-}
-
-ul li.checked::before{
-    background-image: url("images/checked.png");
-    background-position: center;
-    background-size: cover;
-}
-
-fieldset{
-    position: absolute;
-    top: 38.3em;
-    left: 38%;
-    border: none;
-}
-
-fieldset a{
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-fieldset a:hover{
-    color: #8a2be2;
-}
-
-ul li span{
-    position: absolute;
-    right: 1em;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    font-size: 40px;
-    color: #888;
-    line-height: 40px;
-    text-align: justify;
-    border-radius: 90px;
-}
-
-ul li span:hover{
-    position: absolute;
-    color: #ff0000;
+    width: 28px;
+    height: 28px;
+    top: 10px;
 }
