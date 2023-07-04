@@ -1,132 +1,200 @@
 *{
     margin: 0;
-    height: 100%;
-    overflow: hidden;
     font-family: Poppins;
 }
 
 header{
-background-image: url("images/bg-desktop-light.jpg");
-background-position: center;
-background-size: cover;
-height: 202px;
-
+    width: 1311px;
+    height: 202px;
+    background-image: url("images/bg-desktop-light.jpg");
 }
 
-h1{
+header h1{
     color: #fff;
     font-size: 40px;
+    line-height: normal;
     font-weight: 700px;
-    word-wrap: break-word;
-    position: absolute;
-    top: 53px;
-    left: 152px;
+    padding-top: 53px;
+    padding-left: 152px;
 }
 
 header .fa-moon{
     color: #fff;
+    width: 45.4px;
+    height: 47px;
+    font-size: 40px;
+    flex-shrink: 0;
     position: absolute;
+    right: 205px;
     top: 66px;
-    left: 1059px;
-    width: 47rem;
-    height: 47rem;
 }
 
-header div{
+.container{
     position: absolute;
     width: 537px;
     height: 43px;
     background-color: #fff;
-    margin-top: 129px;
-    margin-left: 387px;
+    left: 387px;
+    right: 387px;
+    top: 129px;
     border-radius: 30px;
+    flex-shrink: 0;
 }
 
-header input{
-    position: absolute;
+input{
     width: calc(537px - 85px);
-    height: 43px;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    font-family: Raleway;
-    font-size: 16px;
-    padding-left: 30px;
+    height: 41px;
+    border: 0;
+    outline: 0;
     cursor: text;
-    word-wrap: break-word;
-    font-weight: 400px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-family: Raleway;
+    line-height: normal;
+    font-style: normal;
+    padding-left: 33px;
+    flex-shrink: 0;
 }
 
-header button{
-    position: absolute;
-    width: 85px;
-    height: 43px;
-    left: 452px;
-    border-radius: 30px;
-    font-family: Raleway;
-    font-size: 16px;
-    word-wrap: break-word;
-    font-weight: 400px;
+button{
     cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    position: relative;
+    bottom: 43px;
+    left: 452px;
+    width: 85px;
+    height: 43px;
+    border-radius: 30px;
     border: none;
     outline: none;
     background-color: #8a2be2;
-    padding: 12px 11px 12px 43px;
     color: #fff;
+    flex-shrink: 0;
 }
 
-header button .fa-plus{
-    position: absolute;
-    right: 48.13px;
-    left: 15px;
-}
-
-header button:hover{
-    background-color: rgba(138, 43, 226,80%);
-    color: #000;
+button:hover{
+    background-color: rgba(138, 43, 226, 45%);
+    color: rgba(128, 128, 128, 100%);
 }
 
 #container{
     width: 663px;
-    height: fit-content;
-    flex-shrink: 0;
-    margin-top: 33px;
-    margin-left: 324px;
-    background-color: rgba(217, 217, 217, 50%);
+    height: 127px;
+    background-color: rgba(217, 217, 217,50%);
     border-radius: 30px;
-    padding: 12px 49px;
-    cursor: pointer;
+    margin: 32px 324px;
     -webkit-user-select: none;
     user-select: none;
+    padding-bottom: 11px;
 }
 
 ul li{
-    color: #000;
-    font-size: 16px;
+    list-style: none;
     font-family: Raleway;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     line-height: normal;
-    padding-bottom: 12px;
-    padding-top: 15px;
-    cursor: pointer;
+    color: #000;
     position: relative;
+    top: 36px;
+    padding-left: 45px;
+    }
+
+ul li::before{
+    content: "";
+    position: absolute;
+    border: 1px solid #8a2be2;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 28px;
+    right: 597px;
+    top: -6px;
+}
+
+.icon{
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #d9d9d9;
+    position: relative;
+    bottom: 22px;
+    left: calc(603px - 94px);
+}
+
+.icon .fa-close{
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+.icon .fa-close:hover{
+    color: #f00;
 }
 
 .divider{
     width: 563px;
     height: 1px;
     background-color: #000;
+    position: relative;
+    bottom: 15px;
+    top: 22px;
+    padding-left: 20px;  
 }
 
-ul li::before{
-    content: "";
-    position: absolute;
-    border-radius: 28px;
-    border: 2px solid #8a2be2;
-    width: 28px;
-    height: 28px;
-    top: 10px;
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url("images/checked.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#category{
+    margin-left: 365.5px;
+    margin-right: 426.5px;
+    padding-top: 172px;
+    width: 567.5px;
+    height: 37px;
+}
+
+#category a{
+    margin-right: 88px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+}
+
+#category a:first-of-type{
+    margin-left: 88px;
+}
+
+#category a:active{
+    color: #8a2be2;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #8a2be2;
+}
+
+.attribution{
+    font-family: Raleway;
+    margin-left: 28%;
 }
