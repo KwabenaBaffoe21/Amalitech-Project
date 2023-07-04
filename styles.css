@@ -83,11 +83,13 @@ button:hover{
 }
 
 #container{
+    position: absolute;
+    top: 234px;
+    left: 324px;
     width: 663px;
     height: 127px;
     background-color: rgba(217, 217, 217,50%);
     border-radius: 30px;
-    margin: 32px 324px;
     -webkit-user-select: none;
     user-select: none;
     padding-bottom: 11px;
@@ -166,6 +168,7 @@ ul li.checked::before{
     margin-left: 365.5px;
     margin-right: 426.5px;
     padding-top: 172px;
+    margin-top: 196px;
     width: 567.5px;
     height: 37px;
 }
