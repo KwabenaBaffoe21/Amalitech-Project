@@ -104,8 +104,9 @@ ul li{
     line-height: normal;
     color: #000;
     position: relative;
-    top: 36px;
+    top: 33px;
     padding-left: 45px;
+    padding-top: 14px;
     }
 
 ul li::before{
@@ -117,41 +118,7 @@ ul li::before{
     cursor: pointer;
     border-radius: 28px;
     right: 597px;
-    top: -6px;
-}
-
-.icon{
-    width: 28px;
-    height: 28px;
-    border-radius: 28px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    -webkit-user-select: none;
-    user-select: none;
-    background-color: #d9d9d9;
-    position: relative;
-    bottom: 22px;
-    left: calc(603px - 94px);
-}
-
-.icon .fa-close{
-    margin-left: 8px;
-    margin-top: 6px;
-}
-
-.icon .fa-close:hover{
-    color: #f00;
-}
-
-.divider{
-    width: 563px;
-    height: 1px;
-    background-color: #000;
-    position: relative;
-    bottom: 15px;
-    top: 22px;
-    padding-left: 20px;  
+    top: 7px;
 }
 
 ul li.checked{
@@ -163,6 +130,17 @@ ul li.checked::before{
     background-position: center;
     background-size: cover;
 }
+
+hr {
+    border: none;
+    border-top: 1px solid #000;
+    position: relative;
+    top: 38px;
+    bottom: 60px;
+    left: -1px;
+    right: 51px;
+    width: 563px;
+  }  
 
 #category{
     margin-left: 365.5px;
