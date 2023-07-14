@@ -35,10 +35,12 @@ var icon = document.getElementById("icon");
 icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
-        icon.src = "images/icon-sun.svg";
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
         document.getElementById("img").style.backgroundImage="url(images/bg-desktop-dark.jpg)";
     }else{
-        icon.src = "images/icon-moon.svg";
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
         document.getElementById("img").style.backgroundImage="url(images/bg-desktop-light.jpg)";
     }
     

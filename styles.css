@@ -39,6 +39,14 @@ h1{
   cursor: pointer;
 }
 
+.fa-sun{
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
+  right: 106px;
+  cursor: pointer;
+}
+
 .header{
   width: 537px;
   height: 43px;
@@ -129,12 +137,12 @@ ul{
   margin: 36px 49px 26px 51px;
 }
 
-ul li:not(:last-child){
+/* ul li:not(:last-child){
 border-bottom: 1px solid #000;
 width: 563px;
 margin-top: 0px;
 margin-bottom: 8px;
-}
+} */
 
 ul li{
   list-style: none;
