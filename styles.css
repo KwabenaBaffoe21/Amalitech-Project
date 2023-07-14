@@ -3,9 +3,14 @@
   overflow: hidden;
 }
 
+body{
+  background-color: var(--primary-color);
+}
+
 header{
-  background-color: #8a2eb8;
+  background-color: var(--secondary-color);
   background-image: url("images/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
   color: #fff;
   width: 100vw;
   height: 202px;
@@ -38,7 +43,7 @@ h1{
   width: 537px;
   height: 43px;
   border-radius: 30px;
-  background: #FFF;
+  background: var(--primary-color);
   flex-shrink: 0;
   position: absolute;
   top: 140px;
@@ -57,6 +62,7 @@ h1{
   font-size: 12px;
   font-family: Raleway;
   line-height: normal;
+  color: var(--tertiary-color)
 }
 
 .header button{
@@ -66,7 +72,7 @@ h1{
   user-select: none;
   cursor: pointer;
   border-radius: 30px;
-  background: #8A2BE2;
+  background: var(--secondary-color);
   position: absolute;
   color: #FFF;
   right: 0px;
@@ -89,7 +95,7 @@ h1{
 
 .nav-section{
   position: absolute;
-  right: 957px;
+  right: 967px;
   top: 202px;
   width: 354px;
   height: 100%;
@@ -101,14 +107,22 @@ h1{
 .task-container{
   width: 663px;
   height: fit-content;
-  min-height: 127px;
+  min-height: 74px;
   flex-shrink: 0;
   position: absolute;
-  top: 227px;
+  top: 0;
   left: 539px;
   border-radius: 30px;
   background-color: rgba(217, 217, 217, 50%);
-  transform: translate(-50%/-50);
+  transform: translate(-50%,-50%) scale(0.1);
+  visibility: hidden;
+}
+
+.show-task{
+  top: 300px;
+  left: 870px;
+  transform: translate(-50%,-50%) scale(1);
+  visibility: visible;
 }
 
 ul{
@@ -140,7 +154,7 @@ ul li::before{
   content: "";
   position: absolute;
   border-radius: 28px;
-  border: 1px solid #8a2be2;
+  border: 1px solid var(--secondary-color);
   width: 28px;
   height: 29px;
   -webkit-user-select: none;
@@ -162,13 +176,13 @@ ul li.checked::before{
 
 .nav-section a{
   text-decoration: none;
-  color: #000;
+  color: var(--tertiary-color);
   font-family: Raleway;
 }
 
 .nav-section a:active{
   text-decoration: underline;
-  color: #8A2BE2;
+  color: var(--secondary-color);
   font-family: Raleway;
   font-weight: bold;
 }
@@ -195,5 +209,36 @@ footer{
 }
 
 .attribution a{
-  color: #8A2BE2;
+  color: var(--secondary-color);
+}
+
+ul li span{
+  position: absolute;
+  top: 1px;
+  right: 23px;
+  width: 28px;
+  height: 28px;
+  font-size: 17px;
+  color: var(--tertiary-color);
+  text-align: center;
+  background-color: rgba(217, 217, 217, 50%);
+  border-radius: 28px;
+  padding: 5px;
+  margin-top: 0;
+}
+
+ul li span:hover{
+  color: #ff0000;
+}
+
+:root{
+  --primary-color: #fff;
+  --secondary-color: #8a2be2;
+  --tertiary-color: #000;
+}
+
+.dark-theme{
+  --primary-color: #181824;
+  --secondary-color: #25273c;
+  --tertiary-color: #b4b6cf;
 }
