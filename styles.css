@@ -180,7 +180,7 @@ ul li.checked{
 }
 
 ul li.checked::before{
-  background-image: url("images/checked.png");
+  background-image: var(--icon-image);
   background-size: contain;
   background-position: center;
 }
@@ -246,12 +246,12 @@ ul li span:hover{
   --primary-color: #fff;
   --secondary-color: #8a2be2;
   --tertiary-color: #000;
-  --light-bg-image: url("images/bg-desktop-light.jpg")
+  --icon-image: url("images/checked.jpg")
 }
 
 .dark-theme{
   --primary-color: #181824;
   --secondary-color: #25273c;
   --tertiary-color: #b4b6cf;
-  --dark-bg-image: url("images/bg-desktop-dark.jpg")
+  --icon-image: url("images/dark-theme-icon.jpg")
 }
